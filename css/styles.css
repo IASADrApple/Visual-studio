@@ -1,0 +1,52 @@
+:root {
+    --brand-color: #819b57;
+    --brand-color-dark: #465929;
+    --brand-white: #faf4ea;
+    --brand-dark: #31261a;
+}
+
+/*base*/
+body {
+    color: var(--brand-dark);
+}
+ul {
+    list-style-type: none;
+}
+
+/* buttons */
+.button {
+    color: #faf4ea;
+    background-color: var(--brand-color);
+    border: 2px solid var(--brand-color);
+    border-radius: 8px;
+    cursor: pointer;
+}   
+.button:hover {
+    background-color: transparent;
+    color: var(--brand-color-dark);
+} 
+
+/* links */
+.link {
+    color: var(--brand-white);
+}
+.link:hover {
+    color: var(--brand-color);
+}
+
+/* hero */
+.hero-title {
+    color: var(--brand-white);
+}
+.hero-title .accent {
+color: var(--brand-color);
+}
+
+/* features */
+.features {
+    background-color: var(--brand-color);
+    color: var(--brand-white);
+}
+.section-title .accent {
+    color: var(--brand-color-dark);
+}

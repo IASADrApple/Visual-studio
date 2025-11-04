@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css ">
 </head>
 <body>
     <header>
         <nav>
-            <a href=""><img src="./Images/logo.png" alt="logo"></a>
+            <a href="./index.html"><img src="./Images/logo.png" alt="logo"></a>
             <ul>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Наши традиции</a></li>
-                <li><a href="#">Форматы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a class="link" href="#traditions-section">Наши традиции</a></li>
+                <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
+                <li><a class="link" href="#formats-section">Форматы</a></li>
+                <li><a class="link" href="#contacts-section">Контакты</a></li>
             </ul>
         </nav>
-        <button type="button"><a href="#">Заказать звонок</a></button>
+        <button type="button" class="button">Заказать звонок</button>
     </header>
     <main>
         <section>
-            <h1>Современная пекарня</h1>
+            <h1 class="hero-title"><span class="accent">Современная </span>пекарня</h1>
         </section>
-        <section>
-            <ul>
+        <section id="traditions-section">
+            <ul class="features">
                 <li>Большой запрос на рынке</li>
                 <li>Доступные бюджетные форматы</li>
                 <li>Опытная управленческая команда</li>
             </ul>
-            <h2>Новый формат традиций</h2>
+            <h2 class="section-title">Новый формат традиций</h2>
             <p>
                 <span lang="en">shop bakery</span> - это пекарня, которая взяла наилучшее, 
                 и сохранила вкус традиционной выпечки и натуральность ингредиентов.
@@ -39,8 +40,8 @@
             </p>
             <img src="./Images/section2.jpeg" alt="Пекарь">
         </section>
-        <section>
-            <h2>Наши наилучшие шеф-повары</h2>
+        <section id="chefs-section">
+            <h2 class="section-title">Наши наилучшие <span class="accent">шеф-повары</span></h2>
             <ul>
                 <li>
                     <article>
@@ -50,17 +51,19 @@
                         <p>Я испеку для Вас самые вкусные изделия!</p>
                     </article>
                 </li>
-                <li><article>
+                <li>
+                    <article>
                     <h3>Влад</h3>
                     <p>Привет, я - Влад!</p>
                     <p>Мой кондитерский стаж уже 18 лет. SHOP BAKERY - это наша любовь, которой мы делимся с Вами через нашу выпечку!
                     </p>
                     <p>Я испеку для Вас самые вкусные изделия!</p>
-                </article></li>
+                    </article>
+                </li>
             </ul>
         </section>
-        <section>
-            <h2>Форматы</h2>
+        <section id="formats-section">
+            <h2 class="section-title">Форматы</h2>
             <ul>
                 <li>
                     <article>
@@ -79,8 +82,14 @@
                 </li>
             </ul> 
         </section>
-        <section>
-            <h2>Присоединяйтесь к сети пекарен</h2>
+        <section id="contacts-section">
+            <h2 class="section-title">Присоединяйтесь к сети пекарен</h2>
+            <button type="button" class="button"><a href="#">Заказать звонок</a></button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729.7019529233966!2d30.522595178507522!3d50.441677740532214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceff7d026ca3%3A0xfb9546bb1089071e!2zUHV6YXRhIEhhdGEsINCy0YPQu9C40YbRjyDQkdCw0YHQtdC50L3QsCwgMS8yLCDQmtC40ZfQsiwgMDEwMDE!5e0!3m2!1sru!2sua!4v1762249896891!5m2!1sru!2sua"
+                width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
     <footer>
@@ -88,10 +97,10 @@
             <a href=""><img src="./Images/logo.png" alt="logo"></a>
             
             <ul>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Наши традиции</a></li>
-                <li><a href="#">Форматы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#traditions-section">Наши традиции</a></li>
+                <li><a href="#chefs-section">Шеф-повара</a></li>
+                <li><a href="#formats-section">Форматы</a></li>
+                <li><a href="#contacts-section">Контакты</a></li>
             </ul>
         </nav>
         <address>
@@ -103,7 +112,7 @@
                 <li><a href="#"></a></li> <!-- facebook-->
             </ul>
             <a href="#" target="_blank">Политика конфеденциальности</a>
-            <p>с Данные защищены. 2025</p>
+            <p>&copy; Данные защищены. 2025</p>
         </address>
     </footer>
 </body>
