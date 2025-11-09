@@ -7,132 +7,280 @@
     <link rel="stylesheet" href="./css/styles.css ">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./index.html"><img src="./Images/logo.png" alt="logo"></a>
-            <ul>
-                <li><a class="link" href="#traditions-section">Наши традиции</a></li>
-                <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
-                <li><a class="link" href="#formats-section">Форматы</a></li>
-                <li><a class="link" href="#contacts-section">Контакты</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="button">Заказать звонок</button>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <nav class="header-nav">
+                    <a href="./index.html"><img src="./Images/logo.svg" alt="logo"></a>
+                    <ul class="header-list">
+                        <li><a class="link" href="#traditions-section">Наши традиции</a></li>
+                        <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
+                        <li><a class="link" href="#formats-section">Форматы</a></li>
+                        <li><a class="link" href="#contacts-section">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="button modal-btn-open">Заказать звонок</button>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h1 class="hero-title"><span class="accent">Современная </span>пекарня</h1>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title"><span class="accent">Современная </span>пекарня</h1>
+            </div>
         </section>
-        <section id="traditions-section">
-            <ul class="features">
-                <li class="features-item">Большой запрос на рынке</li>
-                <li class="features-item">Доступные бюджетные форматы</li>
-                <li class="features-item">Опытная управленческая команда</li>
-            </ul>
-            <h2 class="section-title">Новый формат традиций</h2>
-            <p class="traditions-uppercase">
-                <span lang="en">shop bakery</span> - это пекарня, которая взяла наилучшее, 
-                и сохранила вкус традиционной выпечки и натуральность ингредиентов.
-            </p>
-            <p class="traditions-text">
-                Мы работаем, как известные сети - <span>5 минут, и заказ готов</span>. 
-                А еще наши пекарни имеют стильный дизайн и высокое качество обслуживания!
-            </p>
-            <img src="./Images/section2.jpeg" alt="Пекарь">
+        <section class="advantages-section">
+            <div class="container">
+                <h2 class="hidden">Наши преимущества</h2>
+                <ul class="features">
+                    <li class="features-item">Большой запрос на рынке</li>
+                    <li class="features-item">Доступные бюджетные форматы</li>
+                    <li class="features-item">Опытная управленческая команда</li>
+                </ul>
+            </div>
         </section>
-        <section id="chefs-section">
-            <h2 class="section-title">Наши наилучшие <span class="accent">шеф-повары</span></h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3 class="chef-title">Настя</h3>
-                        <p>Привет, я - Настя!</p>
-                        <p>Уже 10 лет, как я привношу в жизнь интересные и вкусные идеи.</p>
-                        <p>Я испеку для Вас самые вкусные изделия!</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3 class="chef-title">Влад</h3>
-                    <p>Привет, я - Влад!</p>
-                    <p>Мой кондитерский стаж уже 18 лет. SHOP BAKERY - это наша любовь, которой мы делимся с Вами через нашу выпечку!
-                    </p>
-                    <p>Я испеку для Вас самые вкусные изделия!</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section id="formats-section">
-            <h2 class="section-title">Форматы</h2>
-            <ul>
-                <li>
-                    <article>
-                    <h3 class="format-title" lang="en">Walrus</h3>
-                    <div class="format-text">
-                        <p>Площадь до 120 м2</p>
-                        <p>Меню: расширенное меню</p>
-                        <p>Штат: 2 продавца-кассира, 2 пекаря, 2 помощника пекаря, 2 официанта-разнарабочих</p>
-                        <p>Посадочные места: есть</p>
+        <section class="traditions-section section" id="traditions-section">
+            <div class="container">
+                <div class="traditions-container">
+                    <div class="traditions-content">
+                        <h2 class="traditions-title section-title">Новый формат традиций</h2>
+                        <p class="traditions-uppercase">
+                            <span lang="en">shop bakery</span> - это пекарня, которая взяла наилучшее, 
+                            и сохранила вкус традиционной выпечки и натуральность ингредиентов.
+                        </p>
+                        <p class="traditions-text">
+                            Мы работаем, как известные сети - <br> <span>5 минут, и заказ готов</span>. <br> 
+                            А еще наши пекарни имеют стильный дизайн <br>и высокое качество обслуживания!
+                        </p>
                     </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                    <h3 class="format-title" lang="en">Horseshoe</h3>
-                    <div class="format-text">
-                        <p>Площадь до 25 м2</p>
-                        <p>Меню: самые популярные позиции меню</p>
-                        <p>Штат: 2 продавца-кассира, 2 пекаря, 1 помощник пекаря</p>
-                        <p>Посадочные места: отсутствуют</p>
+                    <div class="traditions-image">
+                        <img src="./Images/baker-man.jpg" alt="Пекарь">
                     </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3 class="format-title" lang="en">Handlebar</h3>
-                        <div class="format-text">
-                            <p>Площадь до 15 м2</p>
-                            <p>Меню: самые популярные позиции меню</p>
-                            <p>Штат: 1 продавец, 1 пекарь, 1 помощник пекаря</p>
-                            <p>Посадочные места: отсутствуют</p>
-                        </div>
-                    </article>
-                </li>
-            </ul> 
+                </div>
+            </div>
         </section>
-        <section id="contacts-section">
-            <h2 class="section-title">Присоединяйтесь к сети пекарен</h2>
-            <p>Заполни форму, чтобы с тобой связались!</p>
-            <button type="button" class="button"><a href="#">Заказать звонок</a></button>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729.7019529233966!2d30.522595178507522!3d50.441677740532214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceff7d026ca3%3A0xfb9546bb1089071e!2zUHV6YXRhIEhhdGEsINCy0YPQu9C40YbRjyDQkdCw0YHQtdC50L3QsCwgMS8yLCDQmtC40ZfQsiwgMDEwMDE!5e0!3m2!1sru!2sua!4v1762249896891!5m2!1sru!2sua"
-                width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <section class="section" id="chefs-section">
+            <div class="container">
+                <h2 class="chefs-title centered section-title">Наилучшие<br><span class="accent">шеф-повары</span></h2>
+                <ul class="chefs-list">
+                    <li class="chefs-item">
+                        <article class="chef-card">
+                            <img class="chef-photo" src="./Images/nastya-chef.jpg" alt="Шеф Настя">
+                            <div>
+                                <h3 class="chef-title">Настя</h3>
+                                <div class="chef-text">
+                                    <p>Привет, я - Настя!</p>
+                                    <p>Уже 10 лет, как я привношу <br> в жизнь интересные и вкусные идеи.</p>
+                                    <p>Я испеку для Вас<br> самые вкусные изделия!</p>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="chefs-item">
+                        <article class="chef-card">
+                            <img class="chef-photo" src="./Images/vlad-chef.jpg" alt="Шеф Влад">
+                            <div>
+                                <h3 class="chef-title">Влад</h3>
+                                <p class="chef-text">Привет, я - Влад!</p>
+                                <p class="chef-text">Мой кондитерский стаж уже 18 лет. SHOP BAKERY - это наша любовь, которой мы делимся с Вами через нашу выпечку!</p>
+                                <p class="chef-text">Я испеку для Вас самые вкусные изделия!</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section" id="formats-section">
+            <div class="container">
+                <h2 class="formats-title centered section-title">Форматы</h2>
+                <div class="formats-container">
+                    <button class="carousel-button" type="button">
+                        <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"></path>
+                        </svg>
+                    </button>
+                    <ul class="formats-list">
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Walrus</h3>
+                                <div class="format-text">
+                                    <p>Площадь до 120 м2</p>
+                                    <p>Меню: расширенное меню</p>
+                                    <p>Штат: 2 продавца-кассира, 2 пекаря,<br>2 помощника пекаря,<br>2 официанта-разнарабочих</p>
+                                    <p>Посадочные места: есть</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Horseshoe</h3>
+                                <div class="format-text">
+                                    <p>Площадь до 25 м2</p>
+                                    <p>Меню: самые популярные позиции меню</p>
+                                    <p>Штат: 2 продавца-кассира, 2 пекаря,<br>1 помощник пекаря</p>
+                                    <p>Посадочные места: отсутствуют</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <h3 class="format-title" lang="en">Handlebar</h3>
+                                <div class="format-text">
+                                    <p>Площадь до 15 м2</p>
+                                    <p>Меню: самые популярные позиции меню</p>
+                                    <p>Штат: 1 продавец, 1 пекарь,<br>1 помощник пекаря</p>
+                                    <p>Посадочные места: отсутствуют</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <button class="carousel-button next" type="button">
+                        <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section section" id="contacts-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h2 class="contact-title section-title">Присоединяйтесь к сети пекарен</h2>
+                        <p>Заполни форму, чтобы с тобой связались!</p>
+                        <form name="contact-form" autocomplete="off">
+                            <div class="form-field">
+                                <input 
+                                    class="form-input"  
+                                    type="text" 
+                                    id="user-name" 
+                                    name="user-name"
+                                    placeholder=" "
+                                    minlength="3"
+                                    maxlength="20"
+                                >
+                                <label class="form-label" for="user-name">Имя</label>
+                            </div>
+                            <div class="form-field">
+                                <input 
+                                    class="form-input" 
+                                    type="tel" 
+                                    id="user-tel" 
+                                    name="user-tel"
+                                    placeholder=" "                        
+                                >
+                                <label class="form-label" for="user-tel">Телефон</label>
+                            </div>
+                            <div class="form-field">
+                                <input 
+                                    class="form-input" 
+                                    type="email" 
+                                    id="user-email" 
+                                    name="user-email"
+                                    placeholder=" "
+                                >
+                                <label class="form-label" for="user-email">Email</label>
+                            </div>
+                            <button class="form-button button" type="submit">Заказать звонок</button>
+                            <p class="form-terms">Нажимая на кнопку, я соглашаюсь с
+                                <a class="form-terms-link" href="#">политикой конфеденциальности</a></p>
+                        </form>
+                    </div>
+                    <iframe class="contact-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729.7019529233966!2d30.522595178507522!3d50.441677740532214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceff7d026ca3%3A0xfb9546bb1089071e!2zUHV6YXRhIEhhdGEsINCy0YPQu9C40YbRjyDQkdCw0YHQtdC50L3QsCwgMS8yLCDQmtC40ZfQsiwgMDEwMDE!5e0!3m2!1sru!2sua!4v1762249896891!5m2!1sru!2sua"
+                        width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <nav>
-            <a href=""><img src="./Images/logo.png" alt="logo"></a>
-            
-            <ul>
-                <li><a class="link" href="#traditions-section">Наши традиции</a></li>
-                <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
-                <li><a class="link" href="#formats-section">Форматы</a></li>
-                <li><a class="link" href="#contacts-section">Контакты</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a class="address-link" href="tel:+380951111111">+38 (095) 111-11-11</a></li>
-                <li><a class="address-link" href="mailto:test@gmail.com">test@gmail.com</a></li>
-                <li><a class="address-link" href="https://share.google/lOIvvJE1xLy9v3Cba" target="_blank">Украина, Киев, ул. Бассейная, 1/2</a></li>
-                <li><a href="#"></a></li> <!-- insta-->
-                <li><a href="#"></a></li> <!-- facebook-->
-            </ul>
-            <a class="address-link" href="#" target="_blank">Политика конфеденциальности</a>
-            <p class="address-copyright">&copy; Данные защищены. 2025</p>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo">
+                        <a href=""><img src="./Images/logo.svg" alt="logo"></a>
+                    </div>
+                    <ul class="footer-menu">
+                        <li><a class="link" href="#traditions-section">Наши традиции</a></li>
+                        <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
+                        <li><a class="link" href="#formats-section">Форматы</a></li>
+                        <li><a class="link" href="#contacts-section">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="footer-address">
+                    <ul class="address-links">
+                        <li><a class="address-link" href="tel:+380951111111">+38 (095) 111-11-11</a></li>
+                        <li><a class="address-link" href="mailto:test@gmail.com">test@gmail.com</a></li>
+                        <li><a class="address-link" href="https://share.google/lOIvvJE1xLy9v3Cba" target="_blank">Украина, Киев, ул. Бассейная, 1/2</a></li>
+                        <li>
+                            <a href="">
+                                <svg class="address-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg class="address-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                                    <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                                    <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="address-info">
+                        <a class="address-link" href="#" target="_blank">Политика конфеденциальности</a>
+                        <p class="address-copyright">&copy; Данные защищены. 2025</p>
+                    </div>
+                </address>
+            </div>
+        </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">Close</button>
+            <h2>Заказать звонок</h2>
+            <p>Оставьте заявку, и наши менеджера свяжутся с Вами!</p>
+            <form name="modal-form" autocomplete="on" novalidate>
+                <div class="form-field">
+                    <input 
+                        class="form-input"  
+                        type="text" 
+                        id="user-name" 
+                        name="user-name"
+                        placeholder=" "
+                    >
+                    <label class="form-label" for="user-name">Имя</label>
+                </div>
+                <div class="form-field">
+                    <input 
+                        class="form-input" 
+                        type="tel" 
+                        id="user-tel" 
+                        name="user-tel"
+                        placeholder=" "                        
+                    >
+                    <label class="form-label" for="user-tel">Телефон</label>
+                </div>
+                <div class="form-field">
+                    <input 
+                        class="form-input" 
+                        type="email" 
+                        id="user-email" 
+                        name="user-email"
+                        placeholder=" "
+                    >
+                    <label class="form-label" for="user-email">Email</label>
+                </div>
+                <button class="form-button button" type="submit">Заказать звонок</button>
+                <p class="form-terms">Нажимая на кнопку, я соглашаюсь с
+                    <a class="form-terms-link" href="#">политикой конфеденциальности</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
