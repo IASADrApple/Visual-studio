@@ -9,17 +9,27 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
-                <nav class="header-nav">
+            <div class="header__container">
+                <nav class="header__nav">
                     <a href="./index.html"><img src="./Images/logo.svg" alt="logo"></a>
-                    <ul class="header-list">
+                    <ul class="header__menu">
                         <li><a class="link" href="#traditions-section">Наши традиции</a></li>
                         <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
                         <li><a class="link" href="#formats-section">Форматы</a></li>
                         <li><a class="link" href="#contacts-section">Контакты</a></li>
                     </ul>
                 </nav>
-                <button type="button" class="button modal-btn-open">Заказать звонок</button>
+                <button type="button" class="header__button button modal-btn-open">Заказать звонок</button>
+                <button type="button" class="header__burger menu-btn-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                            d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button type="button" class="mobile-menu__btn-close menu-btn-close">Close</button>
+                </div>
             </div>
         </div>
     </header>
@@ -27,6 +37,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title"><span class="accent">Современная </span>пекарня</h1>
+                <button type="button" class="hero-section__button button modal-btn-open">Заказать звонок</button>
             </div>
         </section>
         <section class="advantages-section">
@@ -53,8 +64,10 @@
                             А еще наши пекарни имеют стильный дизайн <br>и высокое качество обслуживания!
                         </p>
                     </div>
-                    <div class="traditions-image">
-                        <img src="./Images/baker-man.jpg" alt="Пекарь">
+                    <div>
+                        <img class="traditions-image" 
+                        srcset="./Images/baker-man.jpg 1x, ./Images/baker-man@2x.jpg 2x"
+                        src="./Images/baker-man.jpg" alt="Пекарь">
                     </div>
                 </div>
             </div>
@@ -104,6 +117,7 @@
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Walrus</h3>
                                 <div class="format-text">
+                                    <img class="format-card__image" src="./Images/walrus-format.jpg" alt="Walrus format">
                                     <p>Площадь до 120 м2</p>
                                     <p>Меню: расширенное меню</p>
                                     <p>Штат: 2 продавца-кассира, 2 пекаря,<br>2 помощника пекаря,<br>2 официанта-разнарабочих</p>
@@ -115,6 +129,7 @@
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Horseshoe</h3>
                                 <div class="format-text">
+                                    <img class="format-card__image" src="./Images/horseshoe-format.jpg" alt="Horseshoe format">
                                     <p>Площадь до 25 м2</p>
                                     <p>Меню: самые популярные позиции меню</p>
                                     <p>Штат: 2 продавца-кассира, 2 пекаря,<br>1 помощник пекаря</p>
@@ -126,6 +141,7 @@
                             <article class="format-card">
                                 <h3 class="format-title" lang="en">Handlebar</h3>
                                 <div class="format-text">
+                                    <img class="format-card__image" src="./Images/handlebar-format.jpg" alt="Handlebar format">
                                     <p>Площадь до 15 м2</p>
                                     <p>Меню: самые популярные позиции меню</p>
                                     <p>Штат: 1 продавец, 1 пекарь,<br>1 помощник пекаря</p>
@@ -282,5 +298,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
 </body>
 </html>
