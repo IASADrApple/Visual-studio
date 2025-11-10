@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пекарня</title>
     <link rel="stylesheet" href="./css/styles.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -74,7 +76,7 @@
         </section>
         <section class="section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-title centered section-title">Наилучшие<br><span class="accent">шеф-повары</span></h2>
+                <h2 class="chefs-title centered section-title">Наилучшие<br><span class="accent">шеф-повара</span></h2>
                 <ul class="chefs-list">
                     <li class="chefs-item">
                         <article class="chef-card">
@@ -106,50 +108,64 @@
         <section class="section" id="formats-section">
             <div class="container">
                 <h2 class="formats-title centered section-title">Форматы</h2>
-                <div class="formats-container">
-                    <button class="carousel-button" type="button">
+                <div class="formats-slider">
+                    <button class="carousel-button prev" type="button">
                         <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                             <path d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"></path>
                         </svg>
                     </button>
-                    <ul class="formats-list">
-                        <li class="formats-item">
-                            <article class="format-card">
-                                <h3 class="format-title" lang="en">Walrus</h3>
-                                <div class="format-text">
-                                    <img class="format-card__image" src="./Images/walrus-format.jpg" alt="Walrus format">
-                                    <p>Площадь до 120 м2</p>
-                                    <p>Меню: расширенное меню</p>
-                                    <p>Штат: 2 продавца-кассира, 2 пекаря,<br>2 помощника пекаря,<br>2 официанта-разнарабочих</p>
-                                    <p>Посадочные места: есть</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="formats-item">
-                            <article class="format-card">
-                                <h3 class="format-title" lang="en">Horseshoe</h3>
-                                <div class="format-text">
-                                    <img class="format-card__image" src="./Images/horseshoe-format.jpg" alt="Horseshoe format">
-                                    <p>Площадь до 25 м2</p>
-                                    <p>Меню: самые популярные позиции меню</p>
-                                    <p>Штат: 2 продавца-кассира, 2 пекаря,<br>1 помощник пекаря</p>
-                                    <p>Посадочные места: отсутствуют</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="formats-item">
-                            <article class="format-card">
-                                <h3 class="format-title" lang="en">Handlebar</h3>
-                                <div class="format-text">
-                                    <img class="format-card__image" src="./Images/handlebar-format.jpg" alt="Handlebar format">
-                                    <p>Площадь до 15 м2</p>
-                                    <p>Меню: самые популярные позиции меню</p>
-                                    <p>Штат: 1 продавец, 1 пекарь,<br>1 помощник пекаря</p>
-                                    <p>Посадочные места: отсутствуют</p>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <div class="format-card__container">
+                                        <h3 class="format-title" lang="en">Walrus</h3>
+                                        <div class="format-text">
+                                            <img class="format-card__image" src="./Images/walrus-format.jpg" alt="Walrus format">
+                                            <p>Площадь до 120 м2</p>
+                                            <p>Меню: расширенное меню</p>
+                                            <p>Штат: 2 продавца-кассира, 2 пекаря,<br>2 помощника пекаря,<br>2 официанта-разнарабочих</p>
+                                            <p>Посадочные места: есть</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <div class="format-card__container">
+                                        <h3 class="format-title" lang="en">Horseshoe</h3>
+                                        <div class="format-text">
+                                            <img class="format-card__image" src="./Images/horseshoe-format.jpg" alt="Horseshoe format">
+                                            <p>Площадь до 25 м2</p>
+                                            <p>Меню: самые популярные позиции меню</p>
+                                            <p>Штат: 2 продавца-кассира, 2 пекаря,<br>1 помощник пекаря</p>
+                                            <p>Посадочные места: отсутствуют</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <div class="format-card__container">
+                                        <h3 class="format-title" lang="en">Handlebar</h3>
+                                        <div class="format-text">
+                                            <img class="format-card__image" src="./Images/handlebar-format.jpg" alt="Handlebar format">
+                                            <p>Площадь до 15 м2</p>
+                                            <p>Меню: самые популярные позиции меню</p>
+                                            <p>Штат: 1 продавец, 1 пекарь,<br>1 помощник пекаря</p>
+                                            <p>Посадочные места: отсутствуют</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                        </div>
+                    </div>
                     <button class="carousel-button next" type="button">
                         <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                             <path d="M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z"></path>
@@ -289,7 +305,7 @@
                         name="user-email"
                         placeholder=" "
                     >
-                    <label class="form-label" for="user-email">Email</label>
+                    <label class="form-label" for="user-email">"Электронная почта"</label>
                 </div>
                 <button class="form-button button" type="submit">Заказать звонок</button>
                 <p class="form-terms">Нажимая на кнопку, я соглашаюсь с
@@ -298,6 +314,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/formats-swiper.js"></script>
     <script src="./js/mobile-modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>

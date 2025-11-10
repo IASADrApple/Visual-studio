@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     display: inline-block;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /* sections */
 .section {
@@ -331,11 +337,17 @@ margin-bottom: 0;
 .chef-title {
     margin-bottom: 16px;
     font-weight: 600;
-    font-size: 40;
+    font-size: 40px;
+    @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
 }
 .chefs-title {
     margin: 0 auto 80px;
     position: relative ;
+    @media screen and (max-width: 1280px) {
+            margin: 24px;
+        }
 }
 .chefs-title::before, .chefs-title::after {
     width: 352px;
@@ -343,6 +355,9 @@ margin-bottom: 0;
     content: '';
     position: absolute;
     bottom: 24px; 
+    @media screen and (max-width: 1280px) {
+            display: none;
+        }
 }
 .chefs-title::before {
     left: 0px;
@@ -351,42 +366,54 @@ margin-bottom: 0;
     right: 0px; 
 }
 .chef-photo {
+    width: 240px;
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--brand-white), -16px 16px 0 2px var(--brand-border);
+    @media screen and (max-width: 768px) {
+        width: 140px;
+    }
 }
 .chefs-list {
     display: flex;
+    flex-direction: row;
     gap: 40px 30px;
     flex-wrap: wrap;
+    @media screen and (max-width: 1280px) {
+        gap: 20px;
+        flex-direction: column;
+    }
 }
 .chefs-item {
-    flex-basis: calc((100% - 30px)/2);
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);
+        }
 }
 .chef-card {
     display: flex;
+    align-items: flex-start;
     gap: 30px;
+    @media screen and (max-width: 1280px) {
+            gap: 16px;
+        }
 }
 .chef-text p {
     margin-bottom: 24px;
+    @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
 }
 .chef-text p:last-child {
     margin-bottom: 0;
 }
 
 /* formats */
-.formats-container {
+.formats-slider {
     display: flex;
     gap: 32px;
     align-items: center;
 }
-.formats-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    color: var(--brand-white);
-}
-.formats-item {
-    flex-basis: calc((100%-40px)/3);
+.swiper-container{
+    overflow: hidden;
 }
 .format-title {
     font-size: 24;
@@ -401,20 +428,7 @@ margin-bottom: 0;
     margin-bottom: 80px;
 }
 .format-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 444px;
-    border-radius: 16px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(49, 38, 26, 0) 55.21%, 
-        rgba(49, 38, 26, 0.71) 72.92%, var(--brand-dark) 100%
-    );
-    padding: 24px;
-    transition: transform .3s;
-    overflow: hidden;
+    transition: transform .3s; 
 }
 .format-card__image {
     position: absolute;
@@ -426,6 +440,19 @@ margin-bottom: 0;
 }
 .format-card:hover {
     transform: scale(1.05);
+}
+.format-card__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 444px;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 55.21%,
+            rgba(49, 38, 26, 0.71) 72.92%, var(--brand-dark) 100%);
+    padding: 24px;
+    overflow: hidden;
 }
 .carousel-button {
     display: flex;
@@ -440,6 +467,9 @@ margin-bottom: 0;
     cursor: pointer;
     fill: var(--brand-dark);
     flex-shrink: 0;
+    @media screen and (max-width: 768px) {
+            display: none;
+        }
 }
 .carousel-button:hover {
     background-color: var(--brand-dark);
@@ -447,6 +477,25 @@ margin-bottom: 0;
 }
 .carousel-button.next {
     transform: rotate(180deg);
+}
+.swiper-wrapper {
+    margin-bottom: 32px ;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center; 
+}
+.pagination__button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    background-color: var(--brand-border);
+    border-radius: 50%;
+}
+.pagination__button_active {
+    background-color: var(--brand-color);
 }
 /*contacts*/
 .contact-section {
